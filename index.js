@@ -13,7 +13,7 @@ app.get('/', function(request, response) {
   }else{
     subDomain = "Everyone ";
   }
-  response.send('Hello World!'+subDomain+process.env['MONGOHQ_URL'])
+  response.send('Hello World!'+subDomain)
 })
 
 app.listen(app.get('port'), function() {
