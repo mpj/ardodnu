@@ -20,10 +20,10 @@ app.get('/', function(request, response) {
         name: subDomain
       }, function(err, item) {
         if (item) {
-          response.send('Hello World!'+item.isDead)
+          response.send('<H1>JA</h1>')
         }
         else {
-          response.send('Did not find that item')
+          response.send('<h1>NEJ</h1>')
         }
 
       })
