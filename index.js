@@ -20,10 +20,10 @@ app.get('/', function(request, response) {
         name: subDomain
       }, function(err, item) {
         if (item) {
-          response.send('<h1 style="text-align:center">JA</h1>')
+          response.send('<h1 style="text-align:center; font-size: 72px;">JA</h1>')
         }
         else {
-          response.send('<h1 style="text-align:center">NEJ</h1>')
+          response.send('<h1 style="text-align:center; font-size: 72px;">NEJ</h1>')
         }
 
       })
