@@ -19,7 +19,7 @@ app.get('/', function(request, response) {
       collection.findOne({
         name: subDomain
       }, function(err, item) {
-        if (!item) {
+        if (item) {
           response.send('Hello World!'+item.isDead)
         }
         else {
